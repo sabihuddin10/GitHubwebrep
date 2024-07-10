@@ -1,0 +1,123 @@
+/* .login-signup-container CSS */
+.login-signup-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto; /* Adjust height based on content */
+  max-height: 118vh; /* Prevents the container from exceeding viewport height */
+  width: 51%;
+  max-width: 360px;
+  border: solid 2px white;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: relative;
+  margin: auto;
+  border-radius: 10px;
+  padding: 20px; /* Padding for better spacing */
+  box-sizing: border-box; /* Ensures padding is included in the width/height */
+  margin-top: 6%;
+  box-shadow: 0 0 10px 5px #00ff89, 0 0 10px 10px #ffffff; /* Green glow effect */
+}
+
+/* Internal container */
+.login-container, .signup-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+  color: white;
+  width: 100%; /* Ensures full width of the parent container */
+  text-align: center;
+}
+
+.login-container {
+  display: flex; /* Ensure this container is flex */
+  text-shadow: #00ff59 0px 0px 2px;
+}
+.signup-container{
+  text-shadow: rgb(15, 0, 228) 0px 0px 4px;
+}
+
+.inputclass {
+  font-size: 1rem;
+  width: 100%; /* Full width of the container */
+  max-width: 300px; /* Limits the width of input fields */
+  margin: 10px 0;
+  padding: 10px; /* Added padding for better usability */
+  border: 1px solid #ccc;
+  border-radius: 5px; /* Rounded corners for input fields */
+  background-color: #333; /* Background color for inputs */
+  color: white; /* Text color for inputs */
+  text-align: center; /* Center text within the input field */
+}
+
+.inputclass:focus {
+  outline: solid 2px #00ff89;
+  border: none;
+  background-color: #333 !important;
+}
+
+.logsign-mainbtns {
+  background-color: rgb(100, 100, 100) !important;
+  color: white;
+  border: outset white 1.3px;
+  border-radius: 6px;
+  margin-top: 20px;
+  padding: 6px 15px;
+}
+
+.logsign-mainbtns:hover {
+  outline: solid 2px #00ff89;
+  border: none;
+  background-color: #333 !important;
+  color: #00ff89;
+}
+
+.logsign-switchbtns {
+  background-color: rgb(100, 100, 100) !important;
+  color: white;
+  border: outset white 1.3px;
+  border-radius: 6px;
+  margin-top: 20px;
+  padding: 6px;
+}
+
+.logsign-switchbtns:hover {
+  outline: solid 2px #00ff89;
+  border: none;
+  background-color: #333 !important;
+  color: #00ff89;
+}
+.white-hr {
+  border: 1px solid white;
+  width: 100%;
+  margin: 20px 0; /* Add some margin for spacing */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .login-signup-container {
+    width: 47%;
+    padding: 34px;
+  }
+
+  .inputclass {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-signup-container {
+    width: 85%;
+    padding: 44px;
+    margin-top: 8em;
+  }
+
+  .inputclass {
+    max-width: 100%;
+  }
+
+  #submit-login, #submit-signup {
+    padding: 8px 16px;
+  }
+}

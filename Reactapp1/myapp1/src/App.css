@@ -1,0 +1,14 @@
+/* App.css */
+.App {
+  text-align: center;
+  min-width: 320px; /* Minimum width */
+  min-height: 480px; /* Minimum height */
+}
+
+.defaultbody {
+  background-color: white;
+}
+
+.darkbody {
+  background-color: #282c34;
+}

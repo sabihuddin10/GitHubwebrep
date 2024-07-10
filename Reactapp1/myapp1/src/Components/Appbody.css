@@ -1,0 +1,52 @@
+/* Appbody.css */
+.Appbody {
+  position: relative; /* Container positioning */
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  min-width: 320px; /* Minimum width to ensure usability on small devices */
+  min-height: 480px; /* Minimum height to ensure usability on small devices */
+  overflow: hidden; /* Prevents overflow from the video */
+}
+
+.Appbody video {
+  position: absolute; /* Ensure the video is positioned absolutely */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the video covers the container */
+  z-index: -1; /* Place the video behind other content */
+}
+
+/* Media query for mobile S (320px and up) */
+@media (max-width: 320px) {
+  .Appbody {
+    height: 100vh;
+  }
+
+  .Appbody video {
+    object-fit: cover;
+  }
+}
+
+/* Additional media query for mobile M (375px and up) */
+@media (max-width: 375px) {
+  .Appbody {
+    height: 100vh;
+  }
+
+  .Appbody video {
+    object-fit: cover;
+  }
+}
+
+/* Additional media query for mobile L (425px and up) */
+@media (max-width: 425px) {
+  .Appbody {
+    height: 100vh;
+  }
+
+  .Appbody video {
+    object-fit: cover;
+  }
+}
